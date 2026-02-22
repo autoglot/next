@@ -1,6 +1,6 @@
 {
   "name": "@autoglot/next",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Automatic i18n translation for Next.js builds",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -27,7 +27,7 @@
     "next": ">=13"
   },
   "dependencies": {
-    "@autoglot/cli": "*"
+    "@autoglot/cli": ">= 0.1.0"
   },
   "devDependencies": {
     "typescript": "^5.7.0",

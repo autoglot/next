@@ -7,7 +7,7 @@ Works with both **webpack** and **Turbopack**.
 ## Quick start
 
 ```bash
-npm install @autoglot/next @autoglot/cli
+npm install @autoglot/next
 ```
 
 ```javascript
@@ -38,7 +38,7 @@ Run `next build` and translations appear alongside your source file.
 4. Install the packages:
 
 ```bash
-npm install @autoglot/next @autoglot/cli
+npm install @autoglot/next
 ```
 
 ## Configuration
