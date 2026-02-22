@@ -54,6 +54,7 @@ npm install @autoglot/next @autoglot/cli
 | `sourceLanguage` | `string` | No | Auto-detect from filename | Source language code |
 | `apiKey` | `string` | No | `AUTOGLOT_API_KEY` env var | API key |
 | `apiUrl` | `string` | No | `https://api.autoglot.app` | API base URL |
+| `project` | `string` | No | | Project for glossary/style guide (`owner/repo` format) |
 | `skipCache` | `boolean` | No | `false` | Skip translation cache |
 
 ### Output
@@ -113,6 +114,16 @@ export default withAutoglot({
 })(withMDX({
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
 }));
+```
+
+### Link to a project (glossary + style guide)
+
+```javascript
+export default withAutoglot({
+  source: 'src/locales/en.json',
+  lang: ['es', 'fr', 'de'],
+  project: 'acme/my-app',
+})({});
 ```
 
 ### Explicit source language

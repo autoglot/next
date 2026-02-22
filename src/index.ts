@@ -13,6 +13,8 @@ export interface AutoglotOptions {
   apiKey?: string;
   /** API base URL (default: production) */
   apiUrl?: string;
+  /** Project for glossary/style guide (owner/repo format, e.g. "acme/my-app") */
+  project?: string;
   /** Skip translation cache */
   skipCache?: boolean;
 }

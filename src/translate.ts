@@ -47,6 +47,7 @@ export async function runTranslation(opts: AutoglotOptions): Promise<void> {
       sourceLanguage,
       apiKey,
       apiUrl: opts.apiUrl,
+      project: opts.project,
       skipCache: opts.skipCache,
       onProgress: (status) => {
         if (status.total_strings > 0) {
